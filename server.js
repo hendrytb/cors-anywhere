@@ -1,5 +1,5 @@
 // Listen on a specific host via the HOST environment variable
-var host = process.env.HOST;
+var host = process.env.HOST || 'localhost';
 // Listen on a specific port via the PORT environment variable
 var port = process.env.PORT || 8080;
 
