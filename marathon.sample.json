@@ -18,7 +18,7 @@
     "mem": 4096,
     "healthChecks": [{
         "protocol": "MESOS_HTTP",
-        "path": "/v1/ping",
+        "path": "/",
         "portIndex": 0,
         "timeoutSeconds": 60,
         "gracePeriodSeconds": 15,
