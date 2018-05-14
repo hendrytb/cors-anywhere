@@ -1,7 +1,7 @@
 // Listen on a specific host via the HOST environment variable
-var host = process.env.HOST || 'localhost';
+var host = '0.0.0.0';
 // Listen on a specific port via the PORT environment variable
-var port = process.env.PORT || 8080;
+var port = 8080;
 
 // Grab the blacklist from the command-line so that we can update the blacklist without deploying
 // again. CORS Anywhere is open by design, and this blacklist is not used, except for countering
@@ -30,8 +30,8 @@ cors_proxy.createServer({
   ],
   redirectSameOrigin: true,
   httpProxyOptions: {
-    xfwd: true,
+    xfwd: false,
   },
 }).listen(port, host, function() {
-  console.log('Running CORS Anywhere on ' + host + ':' + port);
+  console.log(`Running on http://${host}:${port}');
 });
