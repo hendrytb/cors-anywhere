@@ -9,7 +9,7 @@
             "network": "BRIDGE",
             "portMappings": [{
                 "hostPort": 0,
-                "containerPort": 9090
+                "containerPort": 9180
             }]
         }
     },
