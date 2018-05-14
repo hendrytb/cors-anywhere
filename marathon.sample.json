@@ -9,7 +9,7 @@
             "network": "BRIDGE",
             "portMappings": [{
                 "hostPort": 0,
-                "containerPort": 8080
+                "containerPort": 9090
             }]
         }
     },
@@ -28,7 +28,7 @@
     "labels": {
         "HAPROXY_DEPLOYMENT_GROUP": "cors-anywhere",
         "HAPROXY_GROUP": "external",
-        "HAPROXY_0_VHOST": "services.mataharimall.co",
+        "HAPROXY_0_VHOST": "services.mataharimall.com",
         "HAPROXY_0_HTTP_BACKEND_PROXYPASS_PATH": "/cors-anywhere",
         "HAPROXY_0_PATH": "/cors-anywhere",
         "HAPROXY_0_REDIRECT_TO_HTTPS": "true"
