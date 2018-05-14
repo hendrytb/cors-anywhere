@@ -1,7 +1,7 @@
 FROM node:0.12
 MAINTAINER geeks@mataharimall.com
 
-ENV PORT=8080
+ENV PORT=9090
 ENV CORSANYWHERE_WHITELIST https://mataharimall.com,http://mataharimall.com,https://mataharimall.com,http://mataharimall.com
 
 RUN mkdir -p /www/
@@ -12,4 +12,4 @@ RUN npm install
 
 COPY ./ /www/
 
-EXPOSE 8080
+EXPOSE 9090

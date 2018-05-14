@@ -13,9 +13,9 @@
             }]
         }
     },
-    "instances": 2,
-    "cpus": 2,
-    "mem": 4096,
+    "instances": 1,
+    "cpus": 0.5,
+    "mem": 512,
     "healthChecks": [{
         "protocol": "MESOS_HTTP",
         "path": "/",
