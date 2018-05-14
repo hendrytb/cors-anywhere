@@ -1,6 +1,6 @@
 {
     "id": "cors-anywhere",
-    "cmd": "node server.js",
+    "cmd": "npm start",
     "container": {
         "type": "DOCKER",
         "docker": {

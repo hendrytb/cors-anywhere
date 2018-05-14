@@ -33,5 +33,5 @@ cors_proxy.createServer({
     xfwd: false,
   },
 }).listen(port, host, function() {
-  console.log(`Running on http://${host}:${port}');
+  console.log(`Running on http://${host}:${port}`);
 });
